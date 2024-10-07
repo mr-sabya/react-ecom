@@ -1,16 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Header.css'
 
-import Logo from '../../assets/images/logo.png'
-import { Link } from 'react-router-dom'
-import CountryDropdown from '../Buttons/CountryDropdown/CountryDropdown';
 
-import { IoSearchOutline  } from "react-icons/io5";
-import { FaRegCircleUser } from "react-icons/fa6";
-import { Button } from '@mui/material';
+import CountryDropdown from './CountryDropdown/CountryDropdown';
+
+import Logo from '../Logo/Logo';
+import SearchBox from './SearchBox/SearchBox';
+import ActionButton from './ActionButton/ActionButton';
+import Navigation from './Navigation/Navigation';
+import { MyContext } from '../../App';
 
 
-function Header() {
+const Header = () => {
+
+    const context = useContext(MyContext)
+
     return (
         <div>
             <div className='header'>
@@ -20,31 +24,37 @@ function Header() {
                     </div>
                 </div>
 
-                <header className='main-nav'>
+                <header className='main-header'>
                     <div className='container'>
                         <div className='row align-items-center'>
                             <div className='logo col-sm-2'>
-                                <Link to={'/'}> <img src={Logo} alt='Logo' /></Link>
+                                {/* logo start */}
+                                <Logo />
+                                {/* logo end */}
                             </div>
 
                             <div className='col-sm-10 option'>
-                                <CountryDropdown />
+
+                                {
+                                    context.countryList.length !== 0 && <CountryDropdown />
+                                }
+                                
                                 {/* header search start */}
-                                <div className="header-search">
-                                    <input type='text' placeholder='Search for Product' />
-                                    <Button><IoSearchOutline  /></Button>
-                                </div>
+                                <SearchBox />
                                 {/* header search end */}
 
                                 {/* action start */}
-                                <div className='action'>
-                                    <Button><FaRegCircleUser /></Button>
-                                </div>
+                                <ActionButton />
                                 {/* action end */}
                             </div>
                         </div>
                     </div>
                 </header>
+
+
+                {/* nav start */}
+                <Navigation />
+                {/* nav end */}
             </div>
         </div>
     )

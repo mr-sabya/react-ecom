@@ -7,61 +7,23 @@
     text-align: center;
     color: #fff;
     font-size: 13px;
+    margin: 0 !important;
 }
 
-.header .main-nav {
+.header .main-header {
     width: 100%;
     height: auto;
     padding: 20px 0;
 }
 
 
-.header .main-nav .logo img {
+.header .main-header .logo img {
     width: 100%;
 }
 
 
-.header .main-nav .option {
+.header .main-header .option {
     display: flex;
     align-items: center;
     gap: 15px;
-}
-
-
-header .header-search{
-    width: 60%;
-    height: 50px;
-    background: #f3f4f7;
-    padding: 10px;
-    position: relative;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.1) !important;
-}
-
-header .header-search input{
-    background: transparent !important;
-    outline: none !important;
-    border: none !important;
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.8);
-    width: 93%;
-    height: 100%;
-    padding: 0 20px !important;
-}
-
-header .header-search button{
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    z-index: 100;
-    min-width: 40px;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    color: #000;
-}
-
-header .header-search button svg{
-    font-size: 22px;
 }

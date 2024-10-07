@@ -9,10 +9,37 @@ body{
     font-family: "Lato", sans-serif;
 }
 
-p{
-    margin: 0 !important;
+::-webkit-scrollbar{
+    width: 8px !important;
+    height: 8px !important;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #ccc !important;
+}
+::-webkit-scrollbar-track{
+    background: transparent !important;
+}
+
+a{
+    text-decoration: none !important;
 }
 
 /* img{
     width: 100%;
 } */
+
+ul{
+    list-style: none;
+    margin: 0 !important;
+}
+
+@media(min-width:1300px){
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xm{
+        max-width: 1280px !important;
+    }
+}

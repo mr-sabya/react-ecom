@@ -1,0 +1,58 @@
+header .action {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .action button {
+    width: 45px !important;
+    min-width: 45px !important;
+    height: 45px !important;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .action svg {
+    font-size: 22px;
+}
+
+header .action .cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .action .cart .price {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 700;
+}
+
+header .action .cart button {
+    background: #fff1ee !important;
+    border: 1px solid #0000001a !important;
+    color: #ea2b0f !important;
+}
+
+header .action .cart .cart-btn {
+    position: relative;
+}
+
+header .action .cart .cart-btn .count {
+    position: absolute;
+    right: -4px;
+    top: -6px;
+    background: #ea2b0f;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

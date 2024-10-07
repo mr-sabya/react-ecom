@@ -1,0 +1,61 @@
+nav .menu-category{
+    max-width: 17%;
+    flex: 0 0 17%;
+}
+nav .main-menu{
+    max-width: 83%;
+    flex: 0 0 83%;
+}
+
+nav .menu-category .categories {
+    background: #2bbef9;
+    padding: 7px 12px !important;
+    border-radius: 30px !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+nav .menu-category .categories * {
+    color: #fff;
+}
+
+nav .menu-category .categories:hover {
+    background: #2bbef9;
+}
+
+nav .menu-category .categories .text {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+nav .menu-category .categories .bars svg {
+    font-size: 20px !important;
+}
+
+nav .menu-category .categories .angle svg {
+    font-size: 15px !important;
+}
+
+nav .menu {
+    display: flex;
+}
+
+nav .menu .menu-item button {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 25px;
+}
+
+
+nav .menu .menu-item a:hover{
+    background: #f0faff;
+    color: #3bbef9;
+}
